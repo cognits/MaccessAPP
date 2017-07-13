@@ -1,0 +1,28 @@
+.contentFailure{
+  text-align: center;
+}
+
+.imgFailure{
+  width: 40%;
+}
+
+.textRecognitionFailed{
+  line-height: 1;
+  margin: 0;
+  padding: 18% 10px;
+}
+
+.buttonRetry{
+  width: 210px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  background-color: #00c6af;
+  font-family: Roboto_Bold;
+  font-size: 20px;
+  color: #fff;
+}
+
+.buttonRetry:active{
+  background-color: #3ba3a5;
+}

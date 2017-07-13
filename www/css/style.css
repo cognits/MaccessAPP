@@ -1,0 +1,54 @@
+/*typography */
+
+@font-face {
+  font-family: Roboto_Bold;
+  src: url(typography/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto_Bold_Italic;
+  src: url(typography/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Roboto_Regular;
+  src: url(typography/Roboto-Regular.ttf);
+}
+
+p, span{
+  font-family: Roboto_Regular;
+  color: #575756;
+  font-size: 20px;
+}
+
+.scroll{
+  min-height: 100% !important;
+  width: 100%;
+}
+
+
+.fontBoldItalic{
+  font-family: Roboto_Bold_Italic;
+}
+
+.verticarHorizontalCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*styles in footer*/
+
+.contentFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  height: 60px !important;
+  background-image: linear-gradient(0deg, #fff, #fff 50%, transparent 50%)
+}
+
+.logo_footer{
+  width: 150px;
+}

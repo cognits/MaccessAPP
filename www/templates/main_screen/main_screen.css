@@ -1,0 +1,80 @@
+/*style in header settings*/
+
+.contentSettings{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px !important;
+  border-bottom-width: 0;
+  background-image: linear-gradient(0deg, #fff, #fff 50%, transparent 50%)
+}
+
+.contentIconSettings{
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.iconSettings{
+  width: 22px;
+  height: 22px;
+}
+
+
+.classFade{
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: 1;}
+  to {opacity: 1;}
+}
+
+
+.vertical_horizontal_Center_ion_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 60px;
+}
+
+.vertical_horizontal_Center_ion_content > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentRecognize{
+  text-align: center;
+}
+
+.imgRecognize{
+  width: 40%;
+}
+
+.textRequestAccess{
+  line-height: 1;
+  margin: 0;
+  padding: 18% 10px;
+}
+
+.buttonAccess{
+  width: 210px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  background-color: #00c6af;
+  font-family: Roboto_Bold;
+  font-size: 20px;
+  color: #fff;
+}
+
+.buttonAccess:active{
+  background-color: #3ba3a5;
+}
