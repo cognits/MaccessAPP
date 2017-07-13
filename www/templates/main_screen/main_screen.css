@@ -1,13 +1,4 @@
-/*style in header settings*/
 
-.contentSettings{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 60px !important;
-  border-bottom-width: 0;
-  background-image: linear-gradient(0deg, #fff, #fff 50%, transparent 50%)
-}
 
 .contentIconSettings{
   height: 60px;
