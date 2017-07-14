@@ -1,0 +1,28 @@
+.containerLogin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00c6af;
+}
+
+.containerLogin > div{
+  display: flex;
+  justify-content: center;
+}
+
+.boxLogin{
+  background-color: #fff;
+  width: 70%;
+  height: 42%;
+  margin-top: 30%;
+  box-shadow: 1px 2px 8px 0px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.logoInLogin{
+  width: 65%;
+}
+
+.textAdminPlatform{
+  font-size: 10px;
+}

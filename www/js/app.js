@@ -52,5 +52,10 @@ var m_access = angular.module('starter', ['ionic'])
     templateUrl: 'templates/failure/failure.html'
   })
 
+  .state('login', {
+    url: '/login',
+    templateUrl: 'templates/login/login.html'
+  })
+
   $urlRouterProvider.otherwise('/main_screen');
 })
