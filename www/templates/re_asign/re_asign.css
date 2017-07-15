@@ -1,0 +1,45 @@
+.contentHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.centerReasign{
+  text-align: center;
+  margin-top: 12%;
+}
+
+.imgDevice{
+  width: 65px;
+  height: 85px;
+}
+
+.textDeviceAsign{
+  font-size: 10px;
+  color: #dadad9;
+}
+
+.textDirection, .textDirection > span{
+  font-size: 12px;
+}
+
+.contentButtonReasign{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.buttonReasign{
+  width: 170px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  background-color: #00c6af;
+  font-family: Roboto_Bold;
+  color: #fff;
+}
+
+.buttonReasign:active{
+  background-color: #3ba3a5;
+}

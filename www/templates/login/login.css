@@ -12,11 +12,15 @@
 
 .boxLogin{
   background-color: #fff;
-  width: 70%;
+  width: 80%;
   height: 42%;
   margin-top: 30%;
   box-shadow: 1px 2px 8px 0px rgba(0,0,0,0.5);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
 }
 
 .logoInLogin{
@@ -25,4 +29,36 @@
 
 .textAdminPlatform{
   font-size: 10px;
+}
+
+.formLogin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.inputLogin{
+  width: 90%;
+  color: #575756 !important;
+  border: 1px solid #575756 !important;
+  padding: 0 15px !important;
+}
+
+.inputLogin:focus{
+  color: #575756 !important;
+}
+
+.buttonSignIn{
+  width: 65%;
+  height: 35px;
+  border: none;
+  border-radius: 50px;
+  background-color: #00c6af;
+  font-family: Roboto_Bold;
+  color: #fff;
+}
+
+.buttonSignIn:active{
+  background-color: #3ba3a5;
 }

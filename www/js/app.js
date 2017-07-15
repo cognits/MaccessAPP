@@ -57,5 +57,11 @@ var m_access = angular.module('starter', ['ionic'])
     templateUrl: 'templates/login/login.html'
   })
 
+  .state('re_asign', {
+    url: '/re_asign',
+    templateUrl: 'templates/re_asign/re_asign.html',
+    controller: "re_asaignCtrl"
+  })
+
   $urlRouterProvider.otherwise('/main_screen');
 })
