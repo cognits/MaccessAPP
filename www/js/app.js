@@ -60,7 +60,7 @@ var m_access = angular.module('starter', ['ionic'])
   .state('re_asign', {
     url: '/re_asign',
     templateUrl: 'templates/re_asign/re_asign.html',
-    controller: "re_asaignCtrl"
+    controller: "re_asignCtrl"
   })
 
   $urlRouterProvider.otherwise('/main_screen');

@@ -1,79 +1,91 @@
-<ion-modal-view>
+<ion-modal-view class="modalToReasign">
   <ion-content class="contentModal">
-    <div class="contentIconClose" ng-click="Modal_Reasign.hide()">
-      <img class="iconClose" src="img/icon_close_off.png" alt="">
-    </div>
+    <div class="iconCloseDark" ng-click="Modal_Reasign.hide()"></div>
+
     <div class="contentDots">
-      <div class="dotOn"></div>
-      <div class="dotOff" style="margin-left: 10px"></div>
+      <img class="dotOn" src="img/dot_on.png">
+      <img class="dotOff" src="img/dot_off.png" style="margin-left: 10px">
     </div>
     <p class="textReasign">REASIGNAR DISPOSITIVO</p>
     <p class="textChooseAccess">Elige un acceso para reasignar el dispositivo</p>
 
-    <div class="contentTable" ng-controller="modal_reasignCtrl">
-      <table>
-        <tbody>
-          <tr>
-            <td>Zona Pradera</td>
-            <td>Torre 3</td>
-            <td>Oficina 512</td>
-            <td class="fontBold">Bodega C3</td>
-          </tr>
+    <div class="contentReasign1" ng-if="reasign1">
+      <div class="contentTable">
+        <table>
+          <tbody>
+            <tr>
+              <td>Zona Pradera</td>
+              <td>Torre 3</td>
+              <td>Oficina 512</td>
+              <td class="fontBold">Bodega C3</td>
+            </tr>
 
-          <tr>
-            <td>Zona Pradera</td>
-            <td>Torre 3</td>
-            <td>Oficina 512</td>
-            <td class="fontBold">Bodega C3</td>
-          </tr>
+            <tr>
+              <td>Zona Pradera</td>
+              <td>Torre 3</td>
+              <td>Oficina 512</td>
+              <td class="fontBold">Bodega C3</td>
+            </tr>
 
-          <tr>
-            <td>Zona Pradera</td>
-            <td>Torre 3</td>
-            <td>Oficina 512</td>
-            <td class="fontBold">Bodega C3</td>
-          </tr>
+            <tr>
+              <td>Zona Pradera</td>
+              <td>Torre 3</td>
+              <td>Oficina 512</td>
+              <td class="fontBold">Bodega C3</td>
+            </tr>
 
-          <tr>
-            <td>Zona Pradera</td>
-            <td>Torre 4</td>
-            <td>Oficina 310</td>
-            <td class="fontBold">Salón C3</td>
-          </tr>
+            <tr>
+              <td>Zona Pradera</td>
+              <td>Torre 4</td>
+              <td>Oficina 310</td>
+              <td class="fontBold">Salón C3</td>
+            </tr>
 
-          <tr>
-            <td>Zona Pradera</td>
-            <td>Torre 3</td>
-            <td>Oficina 512</td>
-            <td class="fontBold">Bodega C3</td>
-          </tr>
+            <tr>
+              <td>Zona Pradera</td>
+              <td>Torre 3</td>
+              <td>Oficina 512</td>
+              <td class="fontBold">Bodega C3</td>
+            </tr>
 
-          <tr>
-            <td>Zona Pradera</td>
-            <td>Torre 3</td>
-            <td>Oficina 512</td>
-            <td class="fontBold">Bodega C3</td>
-          </tr>
+            <tr>
+              <td>Zona Pradera</td>
+              <td>Torre 3</td>
+              <td>Oficina 512</td>
+              <td class="fontBold">Bodega C3</td>
+            </tr>
 
-          <tr>
-            <td>Zona Pradera</td>
-            <td>Torre 3</td>
-            <td>Oficina 512</td>
-            <td class="fontBold">Bodega C3</td>
-          </tr>
+            <tr>
+              <td>Zona Pradera</td>
+              <td>Torre 3</td>
+              <td>Oficina 512</td>
+              <td class="fontBold">Bodega C3</td>
+            </tr>
 
-          <tr>
-            <td>Zona Pradera</td>
-            <td>Torre 3</td>
-            <td>Oficina 512</td>
-            <td class="fontBold">Bodega C4</td>
-          </tr>
-        </tbody>
-      </table>
+            <tr>
+              <td>Zona Pradera</td>
+              <td>Torre 3</td>
+              <td>Oficina 512</td>
+              <td class="fontBold">Bodega C4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="contentButtonAccept">
+        <button class="buttonAccept" type="button" ng-click="reasignShowHide()">Aceptar</button>
+      </div>
     </div>
 
-    <div class="contentButtonAccept">
-      <button class="buttonAccept" type="button">Aceptar</button>
+    <div class="contentReasign2" ng-if="reasign2">
+      <div class="centerReasign">
+        <img class="imgDevice" src="img/icon_dispositivo.png" alt="Cargando...">
+        <p class="textDeviceAsign">Dispositivo asignado a</p>
+        <p class="textDirection"><span>Zona Pradera</span> > <span>Torre 4</span> > <span>Oficina 310</span> > <b>Salón C3</b></p>
+      </div>
+      <div class="contentButtonReasign">
+        <button class="buttonReasign" type="button" ng-click="Modal_Reasign.hide()">Realizar cambio</button>
+      </div>
     </div>
   </ion-content>
 </ion-modal-view>

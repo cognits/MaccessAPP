@@ -1,36 +1,32 @@
 /*style in header close*/
 
-.contentClose{
+.vertical_horizontal_Center_scan_face > div{
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 60px !important;
-  border-bottom-width: 0;
-  background-image: linear-gradient(0deg, #fff, #fff 50%, transparent 50%)
+  justify-content: center;
 }
 
-.contentIconClose{
+.iconCloseDark{
   height: 60px;
   width: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   right: 0;
   top: 0;
+  background: url(../../img/icon_close_off.png) no-repeat;
+  background-position: center;
+  background-size: 22px;
 }
 
-.iconClose{
-  width: 22px;
-  height: 22px;
+.iconCloseDark:active{
+  background: url(../../img/icon_close_on.png) no-repeat;
+  background-position: center;
+  background-size: 22px;
 }
-
 
 
 .contentPositonYourFace{
   text-align: center;
-  height: 100%;
   width: 100%;
+  margin-top: 80px;
 }
 
 .contentCamera{
@@ -39,18 +35,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20%;
 }
 
 .rectangleCamera{
-  width: 60%;
-  height: 100%;
+  width: 45%;
+  /*height: 100%;
   display: flex;
-  justify-content: center;
-  background-color: rgba(234, 164, 164, 0.2);
+  justify-content: center;*/
   border-radius: 10px;
   padding-top: 10px;
 
+}
+
+.potho{
+  width: 100%;
 }
 
 /*.circleCamera{

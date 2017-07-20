@@ -5,9 +5,26 @@
   height: 60px;
 }
 
+.iconLogOut{
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../../img/icon_logout.png) no-repeat;
+  background-position: center;
+  background-size: 22px;
+}
+
+.iconLogOut:active{
+  background: url(../../img/icon_logout_hover.png) no-repeat;
+  background-position: center;
+  background-size: 22px;
+}
+
 .centerReasign{
   text-align: center;
-  margin-top: 12%;
+  padding-top: 40px;
 }
 
 .imgDevice{

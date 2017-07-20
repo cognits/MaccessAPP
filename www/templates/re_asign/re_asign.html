@@ -3,20 +3,18 @@
 <ion-view>
 
   <ion-header-bar class="contentHeader">
-      <img class="logo_footer" src="img/logo_footer.png" alt="M-Access">
-      <div class="contentIconClose" ui-sref="main_screen">
-        <img class="iconClose" src="img/icon_close_off.png" alt="">
-      </div>
+      <img class="logo_footer" src="img/logo.png" alt="M-Access">
+      <div class="iconLogOut" ui-sref="main_screen"></div>
   </ion-header-bar>
 
   <ion-content class="classFade" style="top: 60px; bottom: 0">
     <div class="centerReasign">
-      <img class="imgDevice" src="" alt="Cargando...">
+      <img class="imgDevice" src="img/icon_dispositivo.png" alt="Cargando...">
       <p class="textDeviceAsign">Dispositivo asignado a</p>
       <p class="textDirection"><span>Zona Pradera</span> > <span>Torre 3</span> > <span>Oficina 512</span> > <b>Bodega C3</b></p>
     </div>
     <div class="contentButtonReasign">
-      <button class="buttonReasign" type="button" ng-click="Modal_Reasign.show()">Reasignar</button>
+      <button class="buttonReasign" type="button" ng-click="show()">Reasignar</button>
     </div>
 
   </ion-content>
