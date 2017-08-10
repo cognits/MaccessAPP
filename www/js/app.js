@@ -8,6 +8,25 @@ var m_access = angular.module('starter', ['ionic'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
+
+    $ionicPlatform.registerBackButtonAction(function(event) {
+
+    }, 100);
+    // Hide StatusBar Android Platform
+		if (ionic.Platform.isAndroid()) {
+			window.addEventListener("native.hidekeyboard", function () {
+				//show stuff on keyboard hide
+				StatusBar.hide();
+				window.AndroidFullScreen.immersiveMode(false, false);
+			});
+		}
+
+		ionic.Platform.fullScreen();
+		if (window.StatusBar) {
+			return StatusBar.hide();
+		}
+
+
     if(window.cordova && window.cordova.plugins.Keyboard) {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
@@ -18,9 +37,13 @@ var m_access = angular.module('starter', ['ionic'])
       // a much nicer keyboard experience.
       cordova.plugins.Keyboard.disableScroll(true);
     }
-    if(window.StatusBar) {
-      StatusBar.styleDefault();
-    }
+    // StatusBar.hide();
+		if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+			cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+		}
+		if (window.StatusBar) {
+			StatusBar.styleLightContent();
+		}
   });
 })
 
@@ -65,3 +88,14 @@ var m_access = angular.module('starter', ['ionic'])
 
   $urlRouterProvider.otherwise('/main_screen');
 })
+
+document.addEventListener("backbutton", onBackKeyDown, false);
+
+function onBackKeyDown() {
+
+  if (document.URL == 'file:///android_asset/www/index.html#/main_screen') {
+		 navigator.app.exitApp();
+  } else if (document.URL == 'file:///android_asset/www/index.html#/scan_face') {
+    window.history.back();
+  }
+}
